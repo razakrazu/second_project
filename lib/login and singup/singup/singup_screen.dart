@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:secand_project/bottom_navigation/botton_navigation.dart';
-import 'package:secand_project/home_screen/home_screen.dart';
+
 
 class Singup_Screen extends StatelessWidget {
   const Singup_Screen({super.key});
@@ -9,7 +10,8 @@ class Singup_Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: SafeArea(child: Padding(
+      body: Obx(() {
+        return  Padding(
         padding: const EdgeInsets.only(left: 30,right: 30,top: 120),
         child: Container(
           
@@ -90,17 +92,21 @@ class Singup_Screen extends StatelessWidget {
                            child: ElevatedButton(onPressed: (){
                                Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => BottomNavigation()),
+                  MaterialPageRoute(builder: (context) => BottomNavigationExample(                    
+                    
+                  )),
                 );
                     
                            }, child: Text('Singup', style:const TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),   style: ElevatedButton.styleFrom(
                                 primary: Color.fromARGB(255, 114, 114, 114),
-                              ),),
+                              ),
+                              ),
                          ),   
             ],
           ),
         ),
-      ))
+      );
+      })
     );
   }
 }

@@ -34,7 +34,7 @@ SizedBox(height: 30,),
            child: Center(
                 child: GridView.builder(
                   shrinkWrap: true,
-                  padding: const EdgeInsets.symmetric(horizontal: 30),
+                  padding: const EdgeInsets.symmetric(vertical: 25),
                   itemCount: 10,
                   itemBuilder: (context, index) {
                     
@@ -91,6 +91,7 @@ SizedBox(height: 30,),
                     crossAxisSpacing: 2.0,
                     mainAxisSpacing: 3,
                     mainAxisExtent: 200,
+                    
                   ),
                 ),
               ),

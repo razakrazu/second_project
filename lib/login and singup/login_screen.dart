@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:secand_project/login/singup/singup_screen.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
+import 'package:secand_project/login%20and%20singup/singup/singup_screen.dart';
 
 class Login_Screen extends StatelessWidget {
   const Login_Screen({super.key});
@@ -7,8 +8,10 @@ class Login_Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    backgroundColor: Colors.black,
-      body: Container(
+    backgroundColor: const Color.fromARGB(255, 101, 101, 101),
+      body: Obx(() {
+      return  Container(
+        
           // decoration: const BoxDecoration(
           //   image: DecorationImage(
           //       image: AssetImage('lib/assets/fkljk.jpg'), fit: BoxFit.cover),
@@ -87,7 +90,8 @@ class Login_Screen extends StatelessWidget {
                             child: Text(
                               'Log In',
                               style:const TextStyle(color: Colors.white),
-                            ),
+                              
+                            ) ,
                             style: ElevatedButton.styleFrom(
                               primary: Color.fromARGB(255, 76, 73, 73),
                             ),
@@ -112,7 +116,9 @@ class Login_Screen extends StatelessWidget {
                 )
               ],
             ),
-          )),
+          )
+          );
+      }),
     );
   }
 }
