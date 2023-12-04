@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 150, 149, 152)),
 
         useMaterial3: true,
       ),
@@ -25,5 +25,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-// hgfhjgjhgjhghj

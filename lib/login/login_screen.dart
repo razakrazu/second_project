@@ -7,11 +7,13 @@ class Login_Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+    backgroundColor: Colors.black,
       body: Container(
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage('lib/assets/fkljk.jpg'), fit: BoxFit.cover),
-          ),
+          // decoration: const BoxDecoration(
+          //   image: DecorationImage(
+          //       image: AssetImage('lib/assets/fkljk.jpg'), fit: BoxFit.cover),
+          // ),
+          
           child: Padding(
             padding: const EdgeInsets.only(),
             child: ListView(
@@ -19,9 +21,10 @@ class Login_Screen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 15, right: 15, top: 150),
                   child: Container(
+                    alignment: Alignment.center,
                     decoration: BoxDecoration(
                       border: Border.all(
-                          color: const Color.fromARGB(255, 174, 172, 172)),
+                          color: Color.fromARGB(255, 113, 109, 109)),
                       borderRadius: BorderRadius.circular(50),
                     ),
                     height: 500,
@@ -78,13 +81,15 @@ class Login_Screen extends StatelessWidget {
                             right: 80,
                           ),
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                             
+                            },
                             child: Text(
                               'Log In',
                               style:const TextStyle(color: Colors.white),
                             ),
                             style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 0, 0, 0),
+                              primary: Color.fromARGB(255, 76, 73, 73),
                             ),
                           ),
                         ),
@@ -114,6 +119,3 @@ class Login_Screen extends StatelessWidget {
 
 
 
-// shamnad
-// fdgjhdlkjhgklj
-// fttyju
